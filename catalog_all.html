@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Reptiles</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTQH3PX98F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PTQH3PX98F');
+    </script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Reptititlan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog_all.html">Reptiles</a></li>
+                </ul>
+                <form class="d-flex me-3" action="search.html" method="GET">
+                    <input class="form-control me-2" type="search" name="query" placeholder="Buscar Reptiles..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-outline-dark" href="cart.html">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrito
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </a>
+                <div class="d-flex ms-auto">
+                    <a href="register_login.html" class="btn btn-outline-dark">
+                        <i class="bi bi-person-circle me-1"></i>
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Reptititlan</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Reptiles al alcance de tu garra</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <!-- Categoría Serpientes -->
+        <h2>Serpientes</h2>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Piton bola.jpg" class="card-img-top" alt="Piton Bola">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Piton bola</h5>
+                        <p class="card-text">Una piton bola perfecta para inicios o principiantes en el mundo de los
+                            bichos.</p>
+                        <br>
+                        <p class="card-text"><strong>Precio: $900.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Piton Reticulada.jpg" class="card-img-top" alt="Piton Reticulada">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Piton Reticulada</h5>
+                        <p class="card-text">La pitón reticulada es una especie de serpiente perteneciente a la familia
+                            Pythonidae, propia del sureste asiático y la Wallacea.
+                            Hay estudios genéticos que afirman que el género Python es parafilético y que esta especie
+                            debe pertenecer a un género, Malayopython.​</p>
+                        <p class="card-text"><strong>Precio: $10,000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Piton Burmes.jpg" class="card-img-top" alt="Piton Burmes">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Piton Burmes</h5>
+                        <p class="card-text">La pitón de Birmania (Python bivittatus) es una especie de serpiente
+                            perteneciente a la familia Pythonidae, propia de la Región indomalaya.2​ Es una serpiente
+                            constrictora originaria de la India, Pakistán, Nepal e Indochina, y fue introducida en
+                            Florida como mascota,
+                            pero cuando crecieron demasiado y ya no las podían mantener, sus dueños las liberaron en el
+                            parque nacional de los Everglades, volviéndose un problema para las especies autóctonas.
+                        </p>
+                        <br>
+                        <p class="card-text"><strong>Precio: $1100.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+        <!-- Categoría Rock -->
+        <h2>Tortugas</h2>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Tortuga.jpg" class="card-img-top" alt="Tortuga Orejas Rojas">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tortuga Orejas Rojas</h5>
+                        <p class="card-text">La jicotea elegante3​ (Trachemys scripta elegans), también conocida como
+                            galápago de Florida,4​5​ o tortuga de orejas rojas, es una subespecie de tortuga
+                            semiacuática perteneciente a la familia Emydidae, originaria de la región que comprende el
+                            sureste de los Estados Unidos y el noreste de México,6
+                            ​ aunque en la actualidad se encuentra en muchas otras partes del mundo por su comercio como
+                            mascota.</p>
+                        <br>
+                        <p class="card-text"><strong>Precio: $500.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Tortuga Sulcata.jpg" class="card-img-top" alt="Tortuga Sulcata">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tortuga Sulcata</h5>
+                        <p class="card-text">La tortuga de espolones africana (Centrochelys sulcata) es una especie de
+                            tortuga criptodira de la familia Testudinidae y único miembro del género Centrochelys.2​
+                            Habitaba buena parte del territorio en el borde sur del desierto del Sáhara, en el Sahel, y
+                            que actualmente casi sólo sobrevive dentro de parques nacionales y reservas de fauna. Está
+                            amenazada en su hábitat debido al proceso de urbanización de su hábitat,
+                            la desertización, la agricultura, las pasturas, así como por el uso de su carne en la
+                            alimentación local y por la medicina tradicional.</p>
+                        <p class="card-text"><strong>Precio: $6000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Tortug Caiman.jpg" class="card-img-top" alt="Tortug Caiman">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tortug Caiman</h5>
+                        <p class="card-text">La tortuga caimán (Macrochelys temminckii) es una especie de tortuga
+                            criptodira de la familia Chelydridae que vive en América.
+                            Es una de las mayores tortugas de agua dulce del mundo.3​ Su nombre científico es en honor
+                            al zoólogo holandés Coenraad Jacob Temminck.4​</p>
+                        <p class="card-text"><strong>Precio: $5500.00 </strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+        <h2>Varanos</h2>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Varano.jpg" class="card-img-top" alt="Varano">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Varano Salvator</h5>
+                        <p class="card-text">Es, tras el dragón de Komodo, el segundo mayor miembro de la familia
+                            Varanidae, llegando a medir 3 m de longitud total,
+                            ​ aunque normalmente alcanza 2,5 m y pesa aproximadamente 60kg, el récord mundial esta en
+                            3,20 m y pesa 90kg.</p>
+                        <p class="card-text"><strong>Precio: $5000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Varano Cocodrilo.jpg" class="card-img-top" alt="Varano Cocodrilo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Varano Cocodrilo</h5>
+                        <p class="card-text">El varano de Papúa o varano cocodrilo (Varanus salvadorii) es una especie
+                            de lagarto de la familia Varanidae.
+                            Es endémico de la isla de Nueva Guinea. Su rango altitudinal se encuentra entre los 0 y los
+                            740 metros de altitud.1​</p>
+                        <br>
+                        <p class="card-text"><strong>Precio: $20,000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Varano Nilo.jpg" class="card-img-top" alt="Varano Nilo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Varano del Nilo</h5>
+                        <p class="card-text">El varano del Nilo puede crecer entre 120 a 220 cm de longitud y los
+                            especímenes más grandes alcanzan 244 cm, la masa corporal en los adultos varía ampliamente.
+                            Un estudio afirma que solo pesan de 0,8 a 1,7 kg mientras que otros pesan entre 5,9 y 15kg.
+                            En varanos grandes las variaciones pueden deberse a la edad o a las condiciones ambientales.
+                            Los especímenes excepcionalmente grandes pueden llegar hasta 20kg, pero esta especie pesa
+                            algo menos que el varano de roca, que es más voluminoso.
+                            Tiene un cuerpo musculoso y unas poderosas mandíbulas. Posee unas garras afiliadas que le
+                            permiten trepar, cavar, defenderse o cazar a sus presas.</p>
+                        <p class="card-text"><strong>Precio: $12,000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <h2>Iguanas</h2>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Iguana Azul.jpg" class="card-img-top" alt="Iguana Azul">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Iguana Azul</h5>
+                        <p class="card-text">La iguana azul (Cyclura lewisi) es una especie de iguana caribeña de la
+                            familia Iguanidae.
+                            Antes de la colonización de América había muchas iguanas de Gran Caimán (azul) (endémicas de
+                            la isla de Gran Caimán), ahora se encuentra en peligro de extinción.</p>
+                        <p class="card-text"><strong>Precio: $2000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Iguana Rinoceronte.jpg" class="card-img-top" alt="Iguana Rinoceronte">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Iguana Rinoceronte</h5>
+                        <p class="card-text">La iguana cornuda o iguana rinoceronte (Cyclura cornuta) es una especie de
+                            reptil escamoso de la familia Iguanidae. Es endémica de la isla de La Española.1​ Existen
+                            dos subespecies en peligro de extinción por la presión del hombre sobre los medios insulares
+                            que ocupa este reptil.
+                            Peso: 5kg. Tamaño: 1,10m. Longevidad: 16 años. Núm. de huevos/año: 11 huevos. La iguana
+                            rinoceronte debe su nombre a los tres cuernos que presenta en la parte superior del hocico.
+                            Se desplaza por tierra, levantando la cabeza, en busca de hojas, frutos, flores y semillas.
+                            Cuando se ve amenazado, lleva sus patas al cuello o se defiende asestando golpes violentos
+                            con la cola.</p>
+                        <br>
+                        <p class="card-text"><strong>Precio: $18,000.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 musician-card">
+                <div class="card h-100">
+                    <a href="profile_reptile.html">
+                        <img src="assets/images/Iguana Verde.jpg" class="card-img-top" alt="Iguana Verde">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Iguana Verde</h5>
+                        <p class="card-text">La iguana verde, también conocida como iguana común (Iguana iguana) es una
+                            especie de la familia Iguanidae. Es un gran lagarto arbóreo. Mide hasta 2 m de longitud de
+                            cabeza a cola. Los machos alcanzan entre 30 y 40 cm de longitud hocico-cloaca,
+                            las hembras cerca de 10 cm menos que los machos; cola extremadamente larga y algo aplanada
+                            lateralmente. Llega a pesar más de 15 kg. Pertenece al grupo mayor y de más complicado
+                            diseño de los saurios del Nuevo Mundo, al que pertenecen la mayoría de las especies. Cabeza
+                            angosta, hocico redondeado en vista dorsal y truncado en vista lateral; ojos grandes con
+                            pupilas verticalmente elípticas; brazos robustos y poderosos con dedos provistos de uñas muy
+                            fuertes; pliegue gular conspicuamente grande en machos adultos y con escamas triangulares en
+                            bordes dando apariencia de sierra.</p>
+                        <p class="card-text"><strong>Precio: $800.00</strong></p>
+                        <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white text-center py-4">
+            <p>Copyright &copy; Reptititlan 2024</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros de Busqueda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTQH3PX98F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PTQH3PX98F');
+    </script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Reptititlan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog_all.html">Reptiles</a></li>
+                </ul>
+                <form class="d-flex me-3" action="search.html" method="GET">
+                    <input class="form-control me-2" type="search" name="query" placeholder="Buscar Reptiles..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-outline-dark" href="cart.html">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrito
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </a>
+                <div class="d-flex ms-auto">
+                    <a href="register_login.html" class="btn btn-outline-dark">
+                        <i class="bi bi-person-circle me-1"></i>
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filtros -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar Filtros -->
+            <div class="col-md-3">
+                <div class="filters">
+                    <h5>Filtrar por:</h5>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="priceRange">Precio máximo:</label>
+                            <select class="form-control" id="priceRange">
+                                <option value="">Cualquier precio</option>
+                                <option value="1500">Hasta $1500</option>
+                                <option value="2000">Hasta $2000</option>
+                                <option value="2500">Hasta $2500</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="type">Tipo:</label>
+                            <select class="form-control" id="type">
+                                <option value="">Cualquier tipo</option>
+                                <option value="Gekkos">Gekkos</option>
+                                <option value="Varanos">Varanos</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="rating">Calificación mínima:</label>
+                            <select class="form-control" id="rating">
+                                <option value="">Cualquier calificación</option>
+                                <option value="3">3 estrellas</option>
+                                <option value="4">4 estrellas</option>
+                                <option value="5">5 estrellas</option>
+                            </select>
+                        </div>
+                        <button type="button" id="applyFilters" class="btn btn-primary w-100">Aplicar Filtros</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contenido Principal -->
+            <div class="col-md-9">
+                <div id="musiciansContainer">
+                    <h2>Gekkos</h2>
+                    <div class="row">
+                        <div class="col-md-4 musician-card" data-price="1500" data-type="Gekkos" data-rating="4">
+                            <div class="card">
+                                <a href="profile_reptile.html">
+                                    <img src="assets/images/Gekko.jpg" class="card-img-top" alt="Gekko Leopardo">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gekko Leopardo</h5>
+                                    <p class="card-text">Una excelente mascota para principiantes.</p>
+                                    <p class="card-text"><strong>Precio: $1500</strong></p>
+                                    <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 musician-card" data-price="1800" data-type="Gekkos" data-rating="5">
+                            <div class="card">
+                                <a href="profile_reptile.html">
+                                    <img src="assets/images/Gekko Diurno.jpg" class="card-img-top" alt="Gekko Diurno">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gekko Diurno</h5>
+                                    <p class="card-text">Excelenet gekko muy activo por las mañanas.</p>
+                                    <p class="card-text"><strong>Precio: $1800</strong></p>
+                                    <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Varanos</h2>
+                    <div class="row">
+                        <div class="col-md-4 musician-card" data-price="1500" data-type="Varanos" data-rating="4">
+                            <div class="card">
+                                <a href="profile_reptile.html">
+                                    <img src="assets/images/Varano Nilo.jpg" class="card-img-top" alt="Varano Nilo">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Varano Nilo</h5>
+                                    <p class="card-text">Varano muy dificil de cuidar</p>
+                                    <p class="card-text"><strong>Precio: $1500</strong></p>
+                                    <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 musician-card" data-price="1800" data-type="Varanos" data-rating="5">
+                            <div class="card">
+                                <a href="profile_reptile.html">
+                                    <img src="assets/images/Varano Cocodrilo.jpg" class="card-img-top"
+                                        alt="Varano Cocodrilo">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Varano Cocodrilo</h5>
+                                    <p class="card-text">Varano primo de los Cocodrilos muy dificil de cuidar</p>
+                                    <p class="card-text"><strong>Precio: $1800</strong></p>
+                                    <a href="profile_reptile.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            document.getElementById("applyFilters").addEventListener("click", function () {
+                const price = document.getElementById("priceRange").value; // Precio máximo seleccionado
+                const type = document.getElementById("type").value; // Categoría seleccionada
+                const rating = document.getElementById("rating").value; // Calificación mínima seleccionada
+
+                const musicians = document.querySelectorAll(".musician-card");
+
+                // Itera sobre todas las tarjetas de músicos y aplica filtros
+                musicians.forEach(musician => {
+                    const musicianPrice = parseInt(musician.getAttribute("data-price"));
+                    const musicianType = musician.getAttribute("data-type");
+                    const musicianRating = parseInt(musician.getAttribute("data-rating"));
+
+                    // Comprueba si la tarjeta cumple con los filtros seleccionados
+                    const matchesPrice = !price || musicianPrice <= parseInt(price);
+                    const matchesType = !type || musicianType === type;
+                    const matchesRating = !rating || musicianRating >= parseInt(rating);
+
+                    // Muestra u oculta la tarjeta según los filtros
+                    if (matchesPrice && matchesType && matchesRating) {
+                        musician.style.display = "block";
+                    } else {
+                        musician.style.display = "none";
+                    }
+                });
+
+                // Comprueba si hay tarjetas visibles para cada categoría
+                const categories = document.querySelectorAll("h2"); // Encabezados de categoría (como "Rock", "Banda")
+                categories.forEach(category => {
+                    const categoryType = category.innerText.trim(); // Obtiene el nombre de la categoría (Rock, Banda, etc.)
+                    const cardsInCategory = Array.from(
+                        document.querySelectorAll(`.musician-card[data-type="${categoryType}"]`)
+                    );
+
+                    const hasVisibleCards = cardsInCategory.some(card => card.style.display === "block");
+
+                    // Muestra/oculta el encabezado según si hay músicos visibles en esa categoría
+                    if (hasVisibleCards) {
+                        category.style.display = "block"; // Muestra el título de la categoría
+                    } else {
+                        category.style.display = "none"; // Oculta el título si no hay músicos visibles
+                    }
+                });
+            });
+        </script>
+</body>
+
+<!-- Footer-->
+<footer class="bg-dark text-white py-3">
+    <div class="container-fluid">
+        <div class="text-center">
+            &copy; 2024 Reptititlan. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+
+</html>
